@@ -1,20 +1,120 @@
-<h1>Zişan Sıcakkanlı</h1>
-<h2>Hakkımda</h2>
-Merhaba, ben Zişan Sıcakkanlı. 23 yaşındayım. İzmir'de yaşıyorum. Beslenme ve Diyetetik mezunuyum.
-<p>Front-End patikasına yeni başladım ve bu yola baş koydum. Umarım başarılı olurum, çünkü çalışmak ve öğrenmek çok hoşuma gidiyor.</p>
-<p>Dizi-film izlemeyi ve yemek yapmayı seviyorum. Boş vaktimin çoğunu bir şeyler izleyerek, geri kalanını da tarif öğrenip deneyerek geçirmeyi seviyorum. </p>
-<h3>Dizi-Film</h3>
-Boş zamanımda çokça dizi ve film izliyorum. En son Netflix'te çıkan <b>Wednesday</b> dizisini bitirdim.
-<!-- Bu dizi Addams Ailesi diye bilinen çok eskiden beri var olan yapıtın tek bir karakteri üzerinde yoğunlaşmış. -->
-<h4>Sevdiğim Diziler</h4>
-<p>Sevdiğim dizileri sıralamak benim için oldukça zor olacak.</p>
-<p>Çünkü dediğim gibi çok fazla dizi izliyorum.</p>
-<ol>
-    <li>Breaking Bad</li>
-    <li>Friends</li>
-    <li>Modern Family</li>
-    <li>High Fidelity</li>
-    <li>Bojack Horseman</li>
-</ol>
-<!-- Bu listeyi daha da uzatabilirim ama şimdilik bu kadar yeterli -->
-<a href="https://github.com/zisanimo">Github profilime tıklayarak ulaşabilirsiniz.</a>
+<h1>HTML</h1>
+
+<p>
+    Lorem <strong>ipsum</strong> dolor sit amet <em>consectetur adipisicing</em> elit. Voluptatem, eaque!
+</p>
+<p>Span: 
+    Lorem ipsum dolor sit <strong>amet consectetur adipisicing elit.</strong> Inventore iusto eum dignissimos, 
+    <span style="color:plum" >esse veritatis molestiae</span> cumque, corporis, culpa itaque pariatur eos? Ducimus magni officia tenetur quis deserunt ut. Optio, deleniti.
+</p>
+
+<h2>Linklerle Çalışmak</h2>
+
+<!-- 
+    link eklemek için a + tab kısayolu
+    -başka bir web sitesine git
+    -başka bir sayfaya git
+    -aynı sayfa içinde bir yere İD-> bilgisine git
+    -mail at
+    -telefon et
+-->
+
+<ul>
+    <li>
+        <!-- bu şekilde aynı sayfa içinde bu linki açıyor -->
+        <a href="http://kodluyoruz.org">
+            Kodluyoruz Sayfasına Git
+        </a>
+    </li>
+    <li>
+        <!-- farklı sayfada link açmak için -->
+        <a href="http://youtube.com" target="_blank">
+            Youtube
+        </a>
+    </li>
+    <li>
+        <!-- oluşturduğumuz sayfa arasında gezinmek -->
+        <a href="iletisim.html">
+            İletişim Sayfasına Git
+        </a>
+    </li>
+    <li>
+        <!-- aynı sayfa içinde bir yere gitmek -->
+        <a href="#footer">
+            En Alt Kısma Git
+        </a>
+    </li>
+    <li>
+        <a href="mailto:info@kodluyoruz.org">
+            Kodluyoruz'a mail at
+        </a>
+    </li>
+    <li>
+        <a href="tel:05551118888">
+            Telefon
+        </a>
+    </li>
+</ul>
+
+
+<h2>Emmet Kısayolları</h2>
+
+<!-- Açıklama satırı oluşturmak için command+k+c tuşlarına basarak kısayol şeklinde açıklama satırı oluşturabilirsin -->
+
+<!-- !+tab a basarsan html dosyasının iskeletini oluşturmak için kısayol oluşturursun -->
+
+<!--
+    + kardeş öge
+    > içine öge
+    ^ yukarı çık ve öge oluştur
+    * çarp
+    lorem -> metin
+    lorem4 -> 4 kelimelik lorem üret
+    . -> class
+    # -> id
+ -->
+<div>
+    <!-- ul>li*5 + tab ile 5 maddelik sırasız liste oluşturdum -->
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ul>
+
+    <!-- ol>li*3 ile 3 maddelik sıralı liste oluşturdum -->
+    <ol>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum.</li>
+    </ol>
+</div>
+
+ <h2>Görsellerle Çalışmak</h2>
+
+ <!--
+    img etiketi görsel için kullanılır ve img + tab
+    source: zorunlu kaynak ekidir
+    alt: alternatik bilgi ekidir
+-->
+<!-- görselin üstüne sağ tıklayıp "resim adresini kopyala" seçeneğini src kısmına yapıştırmak -->
+
+<!-- imglarını depolacağın klasör proje klasörünün içinde olmalı örn: sites dosyasının içine img adlı bir dosya oluşturmalı -->
+
+ <img width="600" height="300" src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1080,h_390/https://assets.ubuntu.com/v1/beadabd5-mascots_kudu-jelly.svg" alt="ubuntu görseli">
+
+<br>
+<hr>
+
+  <img src="https://picsum.photos/400/500" alt="lorem sitesi">
+
+<br>
+<hr>
+
+<a href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender" target="_blank">
+    <img width="500" height="400" src="images/avatar-aang-film-nickeodeon.jpg" alt="avatar-aang-film-nickeodeon">
+</a>
+
+<h2 id="footer">En Alt Kısım</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos delectus perferendis eveniet magni ipsum illo fugiat dolore deserunt culpa labore blanditiis corrupti ex accusamus laudantium facilis, obcaecati enim similique.
